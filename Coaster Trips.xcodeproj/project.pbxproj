@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8435BDA4247909A00038BFC8 /* URLImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435BDA3247909A00038BFC8 /* URLImageModel.swift */; };
+		8435BDA92479126B0038BFC8 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435BDA82479126B0038BFC8 /* ImageCache.swift */; };
+		8451CBC1247853CF008DAA89 /* CoasterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451CBC0247853CF008DAA89 /* CoasterList.swift */; };
+		8451CBC82479085C008DAA89 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451CBC72479085C008DAA89 /* URLImageView.swift */; };
+		849BB2B02475BD6000C9BF1D /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849BB2AF2475BD6000C9BF1D /* Color.xcassets */; };
+		849BB2B42475C19000C9BF1D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2B32475C19000C9BF1D /* AppView.swift */; };
+		849BB2B62476B93800C9BF1D /* TripHomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2B52476B93800C9BF1D /* TripHomeViewCell.swift */; };
+		849BB2E72478022500C9BF1D /* Coasters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2E62478022400C9BF1D /* Coasters.swift */; };
+		849BB2E92478025C00C9BF1D /* Coaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2E82478025C00C9BF1D /* Coaster.swift */; };
+		849BB2EC247807EC00C9BF1D /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2EB247807EC00C9BF1D /* Material.swift */; };
+		849BB2EE247807FB00C9BF1D /* Seating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2ED247807FB00C9BF1D /* Seating.swift */; };
+		849BB2F02478080E00C9BF1D /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2EF2478080E00C9BF1D /* Manufacturer.swift */; };
+		849BB2F22478081E00C9BF1D /* CoasterPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2F12478081E00C9BF1D /* CoasterPark.swift */; };
+		849BB2F42478083300C9BF1D /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2F32478083300C9BF1D /* Status.swift */; };
+		849BB2F62478084400C9BF1D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2F52478084400C9BF1D /* Image.swift */; };
+		84C60C9A247841730042BBBB /* CoasterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2F924783D5B00C9BF1D /* CoasterCell.swift */; };
+		84C60C9D247849F40042BBBB /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C60C9C247849F40042BBBB /* Unwrap.swift */; };
 		84C8246F247052DE000D620C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8246E247052DE000D620C /* AppDelegate.swift */; };
 		84C82471247052DE000D620C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C82470247052DE000D620C /* SceneDelegate.swift */; };
 		84C82473247052DE000D620C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C82472247052DE000D620C /* ContentView.swift */; };
@@ -77,6 +94,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8435BDA3247909A00038BFC8 /* URLImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageModel.swift; sourceTree = "<group>"; };
+		8435BDA82479126B0038BFC8 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		8451CBC0247853CF008DAA89 /* CoasterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterList.swift; sourceTree = "<group>"; };
+		8451CBC72479085C008DAA89 /* URLImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
+		849BB2AF2475BD6000C9BF1D /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		849BB2B32475C19000C9BF1D /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		849BB2B52476B93800C9BF1D /* TripHomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHomeViewCell.swift; sourceTree = "<group>"; };
+		849BB2E62478022400C9BF1D /* Coasters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coasters.swift; sourceTree = "<group>"; };
+		849BB2E82478025C00C9BF1D /* Coaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coaster.swift; sourceTree = "<group>"; };
+		849BB2EB247807EC00C9BF1D /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		849BB2ED247807FB00C9BF1D /* Seating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seating.swift; sourceTree = "<group>"; };
+		849BB2EF2478080E00C9BF1D /* Manufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
+		849BB2F12478081E00C9BF1D /* CoasterPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterPark.swift; sourceTree = "<group>"; };
+		849BB2F32478083300C9BF1D /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		849BB2F52478084400C9BF1D /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		849BB2F924783D5B00C9BF1D /* CoasterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterCell.swift; sourceTree = "<group>"; };
+		84C60C9C247849F40042BBBB /* Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		84C8246B247052DE000D620C /* Coaster Trips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coaster Trips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C8246E247052DE000D620C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C82470247052DE000D620C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +163,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8435BDA72479125A0038BFC8 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				8435BDA82479126B0038BFC8 /* ImageCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		8451CBC224785455008DAA89 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				8451CBC0247853CF008DAA89 /* CoasterList.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		8451CBC924790875008DAA89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8451CBC72479085C008DAA89 /* URLImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		849BB2E5247801ED00C9BF1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8435BDA3247909A00038BFC8 /* URLImageModel.swift */,
+				849BB2EA247807D600C9BF1D /* CoastersModels */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		849BB2EA247807D600C9BF1D /* CoastersModels */ = {
+			isa = PBXGroup;
+			children = (
+				849BB2E62478022400C9BF1D /* Coasters.swift */,
+				849BB2E82478025C00C9BF1D /* Coaster.swift */,
+				849BB2F52478084400C9BF1D /* Image.swift */,
+				849BB2F32478083300C9BF1D /* Status.swift */,
+				849BB2F12478081E00C9BF1D /* CoasterPark.swift */,
+				849BB2EF2478080E00C9BF1D /* Manufacturer.swift */,
+				849BB2ED247807FB00C9BF1D /* Seating.swift */,
+				849BB2EB247807EC00C9BF1D /* Material.swift */,
+			);
+			path = CoastersModels;
+			sourceTree = "<group>";
+		};
+		849BB2FE24783EAD00C9BF1D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				849BB2B52476B93800C9BF1D /* TripHomeViewCell.swift */,
+				849BB2F924783D5B00C9BF1D /* CoasterCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84C60C9B247849E80042BBBB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				84C60C9C247849F40042BBBB /* Unwrap.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		84C82462247052DE000D620C = {
 			isa = PBXGroup;
 			children = (
@@ -154,10 +253,18 @@
 		84C8246D247052DE000D620C /* Coaster Trips */ = {
 			isa = PBXGroup;
 			children = (
+				849BB2B32475C19000C9BF1D /* AppView.swift */,
 				84C8246E247052DE000D620C /* AppDelegate.swift */,
 				84C82470247052DE000D620C /* SceneDelegate.swift */,
 				84C82472247052DE000D620C /* ContentView.swift */,
+				84C60C9B247849E80042BBBB /* Helpers */,
+				849BB2FE24783EAD00C9BF1D /* Cells */,
+				8451CBC924790875008DAA89 /* Views */,
+				8435BDA72479125A0038BFC8 /* Cache */,
+				849BB2E5247801ED00C9BF1D /* Model */,
+				8451CBC224785455008DAA89 /* Lists */,
 				84C82474247052DF000D620C /* Assets.xcassets */,
+				849BB2AF2475BD6000C9BF1D /* Color.xcassets */,
 				84C82479247052DF000D620C /* LaunchScreen.storyboard */,
 				84C8247C247052DF000D620C /* Info.plist */,
 				84C82476247052DF000D620C /* Preview Content */,
@@ -342,6 +449,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C8247B247052DF000D620C /* LaunchScreen.storyboard in Resources */,
+				849BB2B02475BD6000C9BF1D /* Color.xcassets in Resources */,
 				84C82478247052DF000D620C /* Preview Assets.xcassets in Resources */,
 				84C82475247052DF000D620C /* Assets.xcassets in Resources */,
 			);
@@ -379,9 +487,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C60C9D247849F40042BBBB /* Unwrap.swift in Sources */,
+				8435BDA4247909A00038BFC8 /* URLImageModel.swift in Sources */,
+				849BB2EC247807EC00C9BF1D /* Material.swift in Sources */,
+				849BB2B42475C19000C9BF1D /* AppView.swift in Sources */,
+				849BB2F22478081E00C9BF1D /* CoasterPark.swift in Sources */,
+				849BB2E72478022500C9BF1D /* Coasters.swift in Sources */,
 				84C8246F247052DE000D620C /* AppDelegate.swift in Sources */,
+				849BB2EE247807FB00C9BF1D /* Seating.swift in Sources */,
+				849BB2F62478084400C9BF1D /* Image.swift in Sources */,
+				8435BDA92479126B0038BFC8 /* ImageCache.swift in Sources */,
+				8451CBC82479085C008DAA89 /* URLImageView.swift in Sources */,
+				84C60C9A247841730042BBBB /* CoasterCell.swift in Sources */,
+				8451CBC1247853CF008DAA89 /* CoasterList.swift in Sources */,
+				849BB2E92478025C00C9BF1D /* Coaster.swift in Sources */,
+				849BB2F02478080E00C9BF1D /* Manufacturer.swift in Sources */,
 				84C82471247052DE000D620C /* SceneDelegate.swift in Sources */,
+				849BB2B62476B93800C9BF1D /* TripHomeViewCell.swift in Sources */,
 				84C82473247052DE000D620C /* ContentView.swift in Sources */,
+				849BB2F42478083300C9BF1D /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
