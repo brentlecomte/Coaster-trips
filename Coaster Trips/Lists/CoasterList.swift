@@ -13,10 +13,17 @@ struct CoasterList: View {
     
     var body: some View {
         List(coasters, id: \.id) { coaster in
-            CoasterCell(coaster: coaster)
+            ZStack {
+                CoasterCell(coaster: coaster)
+                NavigationLink(destination: CoasterDetail(coaster: coaster)) {
+                    EmptyView()
+                }
+                .buttonStyle(PlainButtonStyle())
+                .hidden()
+            }
         }
         .navigationBarTitle("Coaster Trips")
-        .background(/*@START_MENU_TOKEN@*/Color("White")/*@END_MENU_TOKEN@*/)
+        .background(Color("White"))
     }
 }
 

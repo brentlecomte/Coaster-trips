@@ -15,6 +15,9 @@ struct CoasterCell: View {
     var body: some View {
         HStack(alignment: .top) {
             URLImageView(coaster: coaster)
+            .clipped()
+                .frame(width: 70, height: 70)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
             
             VStack(alignment: .leading) {
                 Text(coaster.name)

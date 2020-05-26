@@ -18,9 +18,7 @@ struct URLImageView: View {
     var body: some View {
         Image(uiImage: urlImageModel.image ?? URLImageView.defaulImage!)
                     .resizable()
-                    .frame(width: 70, height: 70)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .clipped()
+                    .aspectRatio(contentMode: .fill)
     }
     
     static var defaulImage = UIImage(named: "wildfire_kolmarden")
