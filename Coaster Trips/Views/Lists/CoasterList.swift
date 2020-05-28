@@ -22,8 +22,7 @@ struct CoasterList: View {
                 .hidden()
             }
         }
-        .navigationBarTitle("Coaster Trips")
-        .background(Color("White"))
+        .navigationBarTitle("Search coasters", displayMode: .automatic)        
     }
 }
 

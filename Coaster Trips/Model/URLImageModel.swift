@@ -23,16 +23,14 @@ class URLImageModel: ObservableObject {
     
     func loadImage() {
         if loadImageFromCache() {
-            print("🎯 Cache hit!")
             return
         }
         
-        print("🎯 Cache miss, downloading image!")
         loadImageFromURL()
     }
     
     func loadImageFromCache() -> Bool {
-        guard let urlString = urlString, let cacheImage = imageCache.get(forKey: imageID) else {
+        guard let cacheImage = imageCache.get(forKey: imageID) else {
             return false
         }
         
@@ -54,7 +52,7 @@ class URLImageModel: ObservableObject {
                     
                     self.imageCache.set(forKey: self.imageID, image: image)
                     self.image = image
-                    
+                    print("🎯 Cached image!")
                 }
             case .failure(let error):
                 print(error)

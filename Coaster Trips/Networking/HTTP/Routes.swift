@@ -10,8 +10,9 @@ import Foundation
 
 enum Routes: String {
     
-    case baseURL = "https://captaincoaster.com"
+    case baseURL = "https://captaincoaster.com/"
     
     case getCoasters = "api/coasters"
-    case getCoasterImages = "images/coasters"
+    case getCoasterImages = "images/coasters/"
+    case getPark = ""
 }

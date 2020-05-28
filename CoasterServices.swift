@@ -39,7 +39,7 @@ struct CoasterServices {
     
     func getCoasterImage(imagePath: String, _ completion: @escaping (Result<UIImage>) -> Void) {
         do {
-            let request = try HTTPNetworkRequest.configureHTTPRequest(from: .getCoasterImages, imageString: imagePath)
+            let request = try HTTPNetworkRequest.configureHTTPRequest(from: .getCoasterImages, apiString: imagePath)
             
             urlSession.dataTask(with: request) { (imageData, response, error) in
                 if let response = response as? HTTPURLResponse, let imageData = imageData {
