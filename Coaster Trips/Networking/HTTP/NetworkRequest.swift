@@ -13,15 +13,20 @@ public typealias HTTPHeaders = [String: Any]?
 
 struct HTTPNetworkRequest {
     
-    static func configureHTTPRequest(from route: Routes, with paramters: HTTPParameters? = nil, includes headers: HTTPHeaders? = nil, contains body: Data? = nil, and method: HTTPMethod = .get, imageString: String? = nil) throws -> URLRequest {
+    static func configureHTTPRequest(from route: Routes, with paramters: HTTPParameters? = nil, includes headers: HTTPHeaders? = nil, contains body: Data? = nil, and method: HTTPMethod = .get, apiString: String? = nil) throws -> URLRequest {
         
-        var imageURLPath = ""
+        var apiURLPath = ""
         
-        if let imageString = imageString {
-            imageURLPath = "/\(imageString)"
+        if let apiString = apiString {
+            if apiString.starts(with: "/") {
+                apiURLPath = String(apiString.dropFirst())
+            } else {
+                apiURLPath = "\(apiString)"
+            }
+            
         }
         
-        guard let url = URL(string: "\(Routes.baseURL.rawValue)/\(route.rawValue)\(imageURLPath)") else { throw NetworKError.missingURL }
+        guard let url = URL(string: "\(Routes.baseURL.rawValue)\(route.rawValue)\(apiURLPath)") else { throw NetworKError.missingURL }
         
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10.0)
         

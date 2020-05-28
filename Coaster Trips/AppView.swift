@@ -13,7 +13,7 @@ struct AppView: View {
         TabView {
             ContentView()
                 .tabItem {
-                    Text("Trips")
+                    Text("Search")
             }
         }
     }

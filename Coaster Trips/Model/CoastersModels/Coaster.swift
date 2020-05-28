@@ -14,7 +14,7 @@ struct Coaster: Codable {
         case id, name, speed, height, length, manufacturer, park, status
         case material = "materialType"
         case seating = "seatingType"
-        case inversions = "inversionNumber"
+        case inversions = "inversionsNumber"
         case image = "mainImage"
     }
     
