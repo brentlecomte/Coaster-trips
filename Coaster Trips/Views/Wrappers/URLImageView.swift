@@ -21,7 +21,7 @@ struct URLImageView: View {
             .aspectRatio(contentMode: .fill)
     }
     
-    static var defaulImage = UIImage(named: "wildfire_kolmarden")
+    static var defaulImage = UIImage(named: "default")
 }
 
 struct URLImageView_Previews: PreviewProvider {
