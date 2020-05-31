@@ -18,62 +18,33 @@ struct CoasterDetail: View {
     
     var body: some View {
         ScrollView(.vertical) {
-            ZStack {
-                VStack(alignment: .leading) {
-                    Text(coaster.name)
-                        .font(.title)
-                        .foregroundColor(Color.white)
-                        .lineLimit(nil)
-                        
-                    Text(coaster.park?.name ?? "")
-                        .font(.subheadline)
-                        .foregroundColor(Color.white)
-                }
-                .padding(.all)
-                .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, idealHeight: 150, maxHeight: .infinity, alignment: .bottomLeading)
-                .background(LinearGradient(gradient: Gradient(colors: [Color.black.opacity(1), Color.black.opacity(0.1)]), startPoint: .bottom, endPoint: .center))
-
-                URLImageView(coaster: coaster)
-                .zIndex(-1)
-                .frame(maxWidth: .infinity)
-            }
-            
-            VStack(alignment: .leading) {
-                Text(verbatim: "Manufacturer: \(coaster.manufacturer?.name ?? "")")
-                    .font(.subheadline)
-                    .lineLimit(nil)
-                    
-                Text(verbatim: "Material: \(coaster.material?.type ?? "")")
-                    .font(.subheadline)
-                
-                Text(verbatim: "Type: \(coaster.seating?.seating ?? "")")
-                    .font(.subheadline)
-                
-                Text(verbatim: "Speed: \(coaster.speed ?? 0) km/u")
-                    .font(.subheadline)
-                Text(verbatim: "Height: \(coaster.height ?? 0) m")
-                    .font(.subheadline)
-                Text(verbatim: "Length: \(coaster.length ?? 0) m")
-                    .font(.subheadline)
-                Text(verbatim: "Inversions: \(coaster.inversions ?? 0)")
-                    .font(.subheadline)
-            }.frame(maxWidth: .infinity, alignment: .leading)
+            CoasterDetailImageHeader(coaster: coaster, park: park)
+            CoasterDetailStats(coaster: coaster)
             
             VStack(alignment: .leading) {
                 Text("Location")
-                    .font(.subheadline)
-                Text(verbatim: park?.country.name ?? "")
-                    .font(.subheadline)
+                    .font(.title)
                 MapView(parkCoordinate: $parkCoordinate, annotation: parkAnnotation)
                 .edgesIgnoringSafeArea(.all)
                 .frame(maxWidth: .infinity, idealHeight: 400, alignment: .bottom)
             }
-            
-        }.onAppear {
+            .padding(.all)
+        }
+        .onAppear {
             self.loadPark()
         }
     }
+}
+
+struct CoasterDetail_Previews: PreviewProvider {
+    static var previews: some View {
+        CoasterDetail(coaster: previewCoaster)
+    }
     
+    static var previewCoaster = Coaster(id: 1, name: "Maverick", material: Material(type: "steel"), seating: Seating(seating: "sit down"), speed: 113, height: 36, length: 960, inversions: 3, manufacturer: Manufacturer(name: "Intamin"), park: CoasterPark(apiString: "/", name: "Cedar Point"), status: Status(status: "operating"), image: CoasterImage(id: "fdfd", imagePath: "/"))
+}
+
+extension CoasterDetail {
     func loadPark() {
         if let apiString = coaster.park?.apiString {
             ParkServices.shared.getPark(parkPath: apiString) { result in
@@ -86,7 +57,6 @@ struct CoasterDetail: View {
                 }
             }
         }
-        
     }
     
     private func setparKOnMap() {
@@ -95,12 +65,4 @@ struct CoasterDetail: View {
         parkCoordinate = parkLocation.coordinate
         parkAnnotation = parkLocation
     }
-}
-
-struct CoasterDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        CoasterDetail(coaster: previewCoaster)
-    }
-    
-    static var previewCoaster = Coaster(id: 1, name: "Maverick", material: Material(type: "steel"), seating: Seating(seating: "sit down"), speed: 113, height: 36, length: 960, inversions: 3, manufacturer: Manufacturer(name: "Intamin"), park: CoasterPark(apiString: "/", name: "Cedar Point"), status: Status(status: "operating"), image: CoasterImage(id: "fdfd", imagePath: "/"))
 }

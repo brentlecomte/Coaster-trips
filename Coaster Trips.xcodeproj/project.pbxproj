@@ -38,6 +38,8 @@
 		849BB2F62478084400C9BF1D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2F52478084400C9BF1D /* Image.swift */; };
 		84A4FB1F247966850015C7BC /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4FB1E247966850015C7BC /* SearchBar.swift */; };
 		84A4FB21247A68B90015C7BC /* CoasterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4FB20247A68B90015C7BC /* CoasterDetail.swift */; };
+		84BF57402484302F00990810 /* CoasterDetailImageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF573F2484302F00990810 /* CoasterDetailImageHeader.swift */; };
+		84BF57422484309F00990810 /* CoasterDetailStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF57412484309F00990810 /* CoasterDetailStats.swift */; };
 		84C60C9A247841730042BBBB /* CoasterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849BB2F924783D5B00C9BF1D /* CoasterCell.swift */; };
 		84C60C9D247849F40042BBBB /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C60C9C247849F40042BBBB /* Unwrap.swift */; };
 		84C8246F247052DE000D620C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C8246E247052DE000D620C /* AppDelegate.swift */; };
@@ -58,6 +60,8 @@
 		84C824A7247052E0000D620C /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C824A6247052E0000D620C /* NotificationView.swift */; };
 		84C824A9247052E0000D620C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C824A8247052E0000D620C /* Assets.xcassets */; };
 		84C824AC247052E0000D620C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C824AB247052E0000D620C /* Preview Assets.xcassets */; };
+		84FD82A2248406F400D8C440 /* CoasterDetailStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD82A1248406F400D8C440 /* CoasterDetailStat.swift */; };
+		84FD82A5248411E000D8C440 /* CoasterStatsMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD82A4248411E000D8C440 /* CoasterStatsMeasurement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +146,8 @@
 		849BB2F924783D5B00C9BF1D /* CoasterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterCell.swift; sourceTree = "<group>"; };
 		84A4FB1E247966850015C7BC /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		84A4FB20247A68B90015C7BC /* CoasterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterDetail.swift; sourceTree = SOURCE_ROOT; };
+		84BF573F2484302F00990810 /* CoasterDetailImageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterDetailImageHeader.swift; sourceTree = "<group>"; };
+		84BF57412484309F00990810 /* CoasterDetailStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterDetailStats.swift; sourceTree = "<group>"; };
 		84C60C9C247849F40042BBBB /* Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		84C8246B247052DE000D620C /* Coaster Trips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coaster Trips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C8246E247052DE000D620C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +174,8 @@
 		84C824AB247052E0000D620C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84C824AD247052E0000D620C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C824AE247052E0000D620C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		84FD82A1248406F400D8C440 /* CoasterDetailStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterDetailStat.swift; sourceTree = "<group>"; };
+		84FD82A4248411E000D8C440 /* CoasterStatsMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoasterStatsMeasurement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,10 +234,13 @@
 		8451CBC924790875008DAA89 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84BF573F2484302F00990810 /* CoasterDetailImageHeader.swift */,
+				84BF57412484309F00990810 /* CoasterDetailStats.swift */,
 				84812A3624803E9B00B46001 /* Wrappers */,
 				849BB2FE24783EAD00C9BF1D /* Cells */,
 				8451CBC224785455008DAA89 /* Lists */,
 				84A4FB20247A68B90015C7BC /* CoasterDetail.swift */,
+				84FD82A1248406F400D8C440 /* CoasterDetailStat.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,6 +366,7 @@
 				84C8246E247052DE000D620C /* AppDelegate.swift */,
 				84C82470247052DE000D620C /* SceneDelegate.swift */,
 				84C82472247052DE000D620C /* ContentView.swift */,
+				84FD82A3248411AB00D8C440 /* Enums */,
 				84C60C9B247849E80042BBBB /* Helpers */,
 				8451CBC924790875008DAA89 /* Views */,
 				8435BDAA24791BF20038BFC8 /* Networking */,
@@ -417,6 +429,14 @@
 				84C824AB247052E0000D620C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84FD82A3248411AB00D8C440 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				84FD82A4248411E000D8C440 /* CoasterStatsMeasurement.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -592,13 +612,16 @@
 				849BB2B42475C19000C9BF1D /* AppView.swift in Sources */,
 				84812A3324801D0D00B46001 /* Park.swift in Sources */,
 				848D3EAE247C3D9000709A77 /* Result.swift in Sources */,
+				84BF57422484309F00990810 /* CoasterDetailStats.swift in Sources */,
 				84812A3524803CAA00B46001 /* MapView.swift in Sources */,
 				849BB2F22478081E00C9BF1D /* CoasterPark.swift in Sources */,
 				848D3EAC247C39F900709A77 /* CoasterServices.swift in Sources */,
 				849BB2E72478022500C9BF1D /* Coasters.swift in Sources */,
+				84FD82A5248411E000D8C440 /* CoasterStatsMeasurement.swift in Sources */,
 				84C8246F247052DE000D620C /* AppDelegate.swift in Sources */,
 				849BB2EE247807FB00C9BF1D /* Seating.swift in Sources */,
 				848D3EAA247C371B00709A77 /* URLEncoder.swift in Sources */,
+				84BF57402484302F00990810 /* CoasterDetailImageHeader.swift in Sources */,
 				849BB2F62478084400C9BF1D /* Image.swift in Sources */,
 				8435BDA92479126B0038BFC8 /* ImageCache.swift in Sources */,
 				8451CBC82479085C008DAA89 /* URLImageView.swift in Sources */,
@@ -617,6 +640,7 @@
 				849BB2F42478083300C9BF1D /* Status.swift in Sources */,
 				848D3EA0247C2DA800709A77 /* Routes.swift in Sources */,
 				8435BDAC24791C080038BFC8 /* URLRequest.swift in Sources */,
+				84FD82A2248406F400D8C440 /* CoasterDetailStat.swift in Sources */,
 				84812A3024801B8A00B46001 /* ParkServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
