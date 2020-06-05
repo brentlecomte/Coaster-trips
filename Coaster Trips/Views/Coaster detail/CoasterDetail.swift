@@ -8,6 +8,7 @@
 
 import SwiftUI
 import MapKit
+import Contacts
 
 struct CoasterDetail: View {
     var coaster: Coaster
@@ -64,5 +65,32 @@ extension CoasterDetail {
         parkLocation.coordinate = CLLocationCoordinate2D(latitude: park?.latitude ?? 0.0, longitude: park?.longitude ?? 0.0)
         parkCoordinate = parkLocation.coordinate
         parkAnnotation = parkLocation
+        parkAnnotation.title = park?.name
+        getParkAddress(parkCoordinate: parkCoordinate) { address in
+            self.parkAnnotation.subtitle = address
+        }
+    }
+    
+    private func getParkAddress(parkCoordinate: CLLocationCoordinate2D, _ completion: @escaping (String) -> Void) {
+        let geoCoder = CLGeocoder()
+        let parkLocation = CLLocation(latitude: parkCoordinate.latitude, longitude: parkCoordinate.longitude)
+        
+        geoCoder.reverseGeocodeLocation(parkLocation) { (placemark, error) in
+            if error == nil, let location = placemark?[0] {
+                let postalAddressFormatter = CNPostalAddressFormatter()
+                postalAddressFormatter.style = .mailingAddress
+                
+                var addressString: String = ""
+                
+                if let postalAddress = location.postalAddress {
+                    addressString = postalAddressFormatter.string(from: postalAddress)
+                    completion(addressString)
+                } else {
+                    completion("no address available")
+                }
+            } else {
+                completion("no address available")
+            }
+        }
     }
 }
